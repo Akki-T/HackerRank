@@ -1,0 +1,33 @@
+For each credit card number, print its masked version on a new line.
+Task 
+You are given a file with four space separated columns containing the scores of students in three subjects. The first column contains a single character (), the student identifier. The next three columns have three numbers each. The numbers are between  and , both inclusive. These numbers denote the scores of the students in English, Mathematics, and Science, respectively.
+
+Your task is to identify those lines that do not contain all three scores for students.
+
+Input Format
+
+There will be no more than  rows of data. 
+Each line will be in the following format: 
+[Identifier][English Score][Math Score][Science Score]
+
+Output Format
+
+For each student, if one or more of the three scores is missing, display:
+
+Not all scores are available for [Identifier]
+
+awk '{avg=($2+$3+$4)/3; print $0, ":", (avg<50)?"FAIL":(avg<80)?"B":"A"}'
+
+awk '{
+total = ($2 + $3 + $4)/3
+if (total >= 50 && total< 60)
+    print $1,$2,$3,$4, ": C"
+else if (total >= 60 && total < 80)
+    print $1,$2,$3,$4, ": B"
+else if (total >= 80)
+    print $1,$2,$3,$4, ": A" 
+else 
+    print $1,$2,$3,$4, ": FAIL" }'
+
+awk '{if($2>=50&&$3>=50&&$4>=50)print $1" : Pass";
+    else print $1" : Fail"}'

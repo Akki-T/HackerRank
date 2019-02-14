@@ -1,0 +1,4 @@
+Tail of a Text File #2
+
+
+tail -c 20

@@ -1,0 +1,7 @@
+Display the first  lines of an input file.
+
+head 20
+
+head -n 20
+
+

@@ -1,0 +1,17 @@
+Given a text file, remove the consecutive repetitions of any line.
+
+uniq -c
+
+Or
+
+#!/bin/bash
+uniq -c - | xargs -l
+
+
+
+
+uniq -c | cut -b7-
+
+
+uniq -c | colrm 1 6
+

@@ -1,0 +1,10 @@
+In a given fragment of text, delete all the lowercase characters .
+
+
+tr -d [:lower:]
+        #or
+sed 's/[a-z]//g'
+
+tr -d '[a-z]'
+
+tr -d a-z

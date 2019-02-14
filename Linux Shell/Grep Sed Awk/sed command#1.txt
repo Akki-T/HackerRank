@@ -1,0 +1,19 @@
+Task 
+transform first the occurrences of the word 'the' with 'that'. 
+Input Format
+
+A text file will be piped into your command via STDIN.
+
+Output Format
+
+Transform and display the text as required in the task.
+
+
+
+sed 's/the /this /'
+
+
+sed -e 's/\<the\>/this/'
+
+
+sed "s/\bthe\b/this/"

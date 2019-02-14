@@ -1,0 +1,7 @@
+read Input
+if [[ $Input == "y" || $Input == "Y" ]]
+then
+echo "YES"
+else
+echo "NO"
+fi

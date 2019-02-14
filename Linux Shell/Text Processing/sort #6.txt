@@ -1,0 +1,9 @@
+A text file with multiple lines of tab separated data. The first five fields have been explained above
+
+Output Format
+
+Sort the data in ascending order of the average monthly temperature in January.
+
+sort -t $'\t' -k2,2 -n 
+
+sort -t$'\t' -k2 -n
